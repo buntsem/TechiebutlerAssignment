@@ -9,21 +9,33 @@
 /* Begin PBXBuildFile section */
 		EC2CF7EF2BE4C5CB0071D883 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2CF7EE2BE4C5CB0071D883 /* AppDelegate.swift */; };
 		EC2CF7F12BE4C5CB0071D883 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2CF7F02BE4C5CB0071D883 /* SceneDelegate.swift */; };
-		EC2CF7F32BE4C5CB0071D883 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2CF7F22BE4C5CB0071D883 /* ViewController.swift */; };
 		EC2CF7F62BE4C5CB0071D883 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC2CF7F42BE4C5CB0071D883 /* Main.storyboard */; };
 		EC2CF7F82BE4C5CE0071D883 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC2CF7F72BE4C5CE0071D883 /* Assets.xcassets */; };
 		EC2CF7FB2BE4C5CE0071D883 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC2CF7F92BE4C5CE0071D883 /* LaunchScreen.storyboard */; };
+		EC2CF8042BE4C8EB0071D883 /* APIEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2CF8032BE4C8EB0071D883 /* APIEndpoints.swift */; };
+		EC2CF8062BE4C9010071D883 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2CF8052BE4C9010071D883 /* APIError.swift */; };
+		EC2CF8082BE4C9190071D883 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2CF8072BE4C9190071D883 /* APIManager.swift */; };
+		EC2CF80B2BE4C99E0071D883 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2CF80A2BE4C99E0071D883 /* Post.swift */; };
+		EC2CF80E2BE4D1C70071D883 /* PostsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2CF80D2BE4D1C70071D883 /* PostsViewController.swift */; };
+		EC2CF8112BE4E9FA0071D883 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2CF8102BE4E9FA0071D883 /* PostTableViewCell.swift */; };
+		EC2CF8152BE519620071D883 /* PostDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2CF8142BE519620071D883 /* PostDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EC2CF7EB2BE4C5CB0071D883 /* AssessmentTechiebutler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AssessmentTechiebutler.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC2CF7EE2BE4C5CB0071D883 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC2CF7F02BE4C5CB0071D883 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EC2CF7F22BE4C5CB0071D883 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EC2CF7F52BE4C5CB0071D883 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EC2CF7F72BE4C5CE0071D883 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC2CF7FA2BE4C5CE0071D883 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC2CF7FC2BE4C5CE0071D883 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC2CF8032BE4C8EB0071D883 /* APIEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndpoints.swift; sourceTree = "<group>"; };
+		EC2CF8052BE4C9010071D883 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		EC2CF8072BE4C9190071D883 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		EC2CF80A2BE4C99E0071D883 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		EC2CF80D2BE4D1C70071D883 /* PostsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsViewController.swift; sourceTree = "<group>"; };
+		EC2CF8102BE4E9FA0071D883 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		EC2CF8142BE519620071D883 /* PostDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +68,53 @@
 		EC2CF7ED2BE4C5CB0071D883 /* AssessmentTechiebutler */ = {
 			isa = PBXGroup;
 			children = (
+				EC2CF8092BE4C97B0071D883 /* Models */,
+				EC2CF80F2BE4E9DA0071D883 /* View */,
+				EC2CF80C2BE4D1B60071D883 /* ViewControllers */,
 				EC2CF7EE2BE4C5CB0071D883 /* AppDelegate.swift */,
 				EC2CF7F02BE4C5CB0071D883 /* SceneDelegate.swift */,
-				EC2CF7F22BE4C5CB0071D883 /* ViewController.swift */,
+				EC2CF8022BE4C6110071D883 /* Service */,
 				EC2CF7F42BE4C5CB0071D883 /* Main.storyboard */,
 				EC2CF7F72BE4C5CE0071D883 /* Assets.xcassets */,
 				EC2CF7F92BE4C5CE0071D883 /* LaunchScreen.storyboard */,
 				EC2CF7FC2BE4C5CE0071D883 /* Info.plist */,
 			);
 			path = AssessmentTechiebutler;
+			sourceTree = "<group>";
+		};
+		EC2CF8022BE4C6110071D883 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				EC2CF8032BE4C8EB0071D883 /* APIEndpoints.swift */,
+				EC2CF8052BE4C9010071D883 /* APIError.swift */,
+				EC2CF8072BE4C9190071D883 /* APIManager.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		EC2CF8092BE4C97B0071D883 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EC2CF80A2BE4C99E0071D883 /* Post.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EC2CF80C2BE4D1B60071D883 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				EC2CF80D2BE4D1C70071D883 /* PostsViewController.swift */,
+				EC2CF8142BE519620071D883 /* PostDetailViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		EC2CF80F2BE4E9DA0071D883 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EC2CF8102BE4E9FA0071D883 /* PostTableViewCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +188,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC2CF7F32BE4C5CB0071D883 /* ViewController.swift in Sources */,
+				EC2CF8082BE4C9190071D883 /* APIManager.swift in Sources */,
 				EC2CF7EF2BE4C5CB0071D883 /* AppDelegate.swift in Sources */,
 				EC2CF7F12BE4C5CB0071D883 /* SceneDelegate.swift in Sources */,
+				EC2CF8112BE4E9FA0071D883 /* PostTableViewCell.swift in Sources */,
+				EC2CF8152BE519620071D883 /* PostDetailViewController.swift in Sources */,
+				EC2CF80E2BE4D1C70071D883 /* PostsViewController.swift in Sources */,
+				EC2CF8062BE4C9010071D883 /* APIError.swift in Sources */,
+				EC2CF80B2BE4C99E0071D883 /* Post.swift in Sources */,
+				EC2CF8042BE4C8EB0071D883 /* APIEndpoints.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
